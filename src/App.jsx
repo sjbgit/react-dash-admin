@@ -1,10 +1,11 @@
 import React from 'react'
+import './index.css'
 
 const App = () => {
-  const x = 'test info1';
-  console.log("this is my tests");
+  const x = 'test info1b';
+  //console.log("this is my tests");
   return (
-    <div>App - { x } test</div>
+    <h1 className="underline text-3xl">App - { x } test</h1>
   )
 }
 
