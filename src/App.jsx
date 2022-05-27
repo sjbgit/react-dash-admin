@@ -10,7 +10,7 @@ import './App.css'
 
 const App = () => {
   const x = 'test info';
-  const activeMenu = false; 
+  const activeMenu = true; 
   //console.log("this is my tests");
   return (
     <div>
