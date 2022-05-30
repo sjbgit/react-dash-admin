@@ -9,6 +9,7 @@ const initialState = {
     notification: false
 }
 
+//will handle state for the appplication
 export const ContextProvider = ({ children }) => {
 
     return (
