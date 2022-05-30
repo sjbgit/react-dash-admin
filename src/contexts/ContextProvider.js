@@ -9,15 +9,23 @@ const initialState = {
     notification: false
 }
 
-//will handle state for the appplication
+//will handle state for the appplication - notes
+//whatever is passed in the value of the provider will be passed
+//to all parts of the application
 export const ContextProvider = ({ children }) => {
-
+    const [activeMenu, setActiveMenu] = useState(true)
+    
     return (
-        <StateContext.Provider value= {{test: 'test'}
-
-        }>
+        <StateContext.Provider 
+            value= {{
+                activeMenu,
+                setActiveMenu,
+            }}
+        >
             {children}
         
         </StateContext.Provider>
     )
 }
+
+export const useStateContext = () => useContext(StateContext);
