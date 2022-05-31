@@ -7,7 +7,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { links } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
-
+//NOTE: CLOSE ICON DOES NOT SHOW IN SIDEBAR FOR FULL SCREEN (NON-MOBILE)
 const Sidebar = () => {
   //const activeMenu = true;
   const { activeMenu, setActiveMenu, screenSize } = useStateContext(); 
